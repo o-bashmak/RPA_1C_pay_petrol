@@ -1,0 +1,35 @@
+﻿02:21:51 Initializing settings.../ create a log file / copy Data File - Data.xlsx
+02:21:53 run 1C UPP
+02:21:53 delay 7 sec
+02:22:00 delay 7 sec
+02:22:08 delay 7 sec
+02:22:15 delay 7 sec
+02:22:26 1C UPP is started
+02:22:28 start process
+02:24:12 fulfilling Zayavka in 1c UPP
+02:26:19 Initializing settings.../ create a log file / copy Data File - Data.xlsx
+02:26:20 1C UPP is started
+02:26:22 start process
+02:27:50 Initializing settings.../ create a log file / copy Data File - Data.xlsx
+02:27:52 1C UPP is started
+02:27:54 start process
+02:29:36 fulfilling Zayavka in 1c UPP
+02:42:22 Initializing settings.../ create a log file / copy Data File - Data.xlsx
+02:42:22 run 1C UPP
+02:42:22 delay 7 sec
+02:42:30 delay 7 sec
+02:42:37 delay 7 sec
+02:42:44 1C UPP is started
+02:42:45 start process
+02:44:17 fulfilling Zayavka in 1c UPP
+02:44:39 fulfill Zayavka is fullfilled
+02:48:22 Initializing settings.../ create a log file / copy Data File - Data.xlsx
+02:48:24 1C UPP is started
+02:48:26 start process
+02:50:24 fulfilling Zayavka in 1c UPP
+02:50:40 fulfill Zayavka is fullfilled
+02:53:25 Initializing settings.../ create a log file / copy Data File - Data.xlsx
+02:53:27 1C UPP is started
+02:53:29 start process
+02:54:58 fulfilling Zayavka in 1c UPP
+02:55:21 fulfill Zayavka is fullfilled

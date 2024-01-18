@@ -1,0 +1,110 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="createSchedule" mva:VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="842,811" sap2010:WorkflowViewState.IdRef="createSchedule_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:mwt="clr-namespace:Microsoft.Win32.TaskScheduler;assembly=Microsoft.Win32.TaskScheduler" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=mscorlib" xmlns:ta="clr-namespace:TaskScheduling.Activities;assembly=TaskScheduling.Activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>Microsoft.Win32.TaskScheduler</x:String>
+      <x:String>System.Xml.Serialization</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>TaskScheduling.Activities</x:String>
+      <x:String>System.Activities.DynamicUpdate</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>Microsoft.Win32.TaskScheduler</AssemblyReference>
+      <AssemblyReference>TaskScheduling.Activities</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization</AssemblyReference>
+      <AssemblyReference>System.ServiceModel</AssemblyReference>
+      <AssemblyReference>Microsoft.Bcl.AsyncInterfaces</AssemblyReference>
+      <AssemblyReference>System.ValueTuple</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Composition</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>UiPath.Excel</AssemblyReference>
+      <AssemblyReference>System.Runtime.WindowsRuntime</AssemblyReference>
+      <AssemblyReference>NPOI</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="createSchedule" sap:VirtualizedContainerService.HintSize="548,536" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <ta:TaskSchedulerScope DisplayName="Task scheduler scope" sap:VirtualizedContainerService.HintSize="506,444" sap2010:WorkflowViewState.IdRef="TaskSchedulerScope_1" TaskName="[&quot;restart1Cprocess-&quot;+System.DateTime.Now.ToString(&quot;hhmmss&quot;)]">
+      <ta:TaskSchedulerScope.BodyActions>
+        <ActivityAction x:TypeArguments="mwt:TaskDefinition">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="mwt:TaskDefinition" Name="Task" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Actions" sap:VirtualizedContainerService.HintSize="472,194" sap2010:WorkflowViewState.IdRef="Sequence_3">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <ta:ScheduleRobotActivity DisplayName="UiPath Robot Scheduling" sap:VirtualizedContainerService.HintSize="430,102" sap2010:WorkflowViewState.IdRef="ScheduleRobotActivity_1" PathToRobot="[Directory.GetCurrentDirectory+&quot;\Main.xaml&quot;]" UiPathInstalationFolder="C:\Users\rpa\AppData\Local\Programs\UiPath\Studio\UiRobot.exe">
+              <ta:ScheduleRobotActivity.Arguments>
+                <scg:Dictionary x:TypeArguments="x:String, Argument" />
+              </ta:ScheduleRobotActivity.Arguments>
+            </ta:ScheduleRobotActivity>
+          </Sequence>
+        </ActivityAction>
+      </ta:TaskSchedulerScope.BodyActions>
+      <ta:TaskSchedulerScope.BodyTriggers>
+        <ActivityAction x:TypeArguments="mwt:TaskDefinition">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="mwt:TaskDefinition" Name="Task" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Triggers" sap:VirtualizedContainerService.HintSize="242,114" sap2010:WorkflowViewState.IdRef="Sequence_2">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <ta:OneTimeAbsoluteTrigger DisplayName="One Time Absolute Trigger" sap:VirtualizedContainerService.HintSize="200,22" sap2010:WorkflowViewState.IdRef="OneTimeAbsoluteTrigger_1" SchedulingTime="[System.DateTime.Now.AddMinutes(15)]" />
+          </Sequence>
+        </ActivityAction>
+      </ta:TaskSchedulerScope.BodyTriggers>
+      <ta:TaskSchedulerScope.TaskSettings>
+        <ta:TaskSettings DisallowStartIfOnBatteries="False" ExecutionTimeLimit="3.00:00:00" RunOnlyIfIdle="False" RunOnlyIfNetworkAvailable="False" StartWhenAvailable="True" />
+      </ta:TaskSchedulerScope.TaskSettings>
+    </ta:TaskSchedulerScope>
+  </Sequence>
+</Activity>

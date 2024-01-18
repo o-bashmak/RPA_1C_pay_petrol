@@ -1,0 +1,39 @@
+﻿02:48:26 Initializing settings.../ create a log file / copy Data File - Data.xlsx
+02:48:27 run 1C UPP
+02:48:27 delay 7 sec
+02:48:35 delay 7 sec
+02:48:42 delay 7 sec
+02:48:49 1C UPP is started
+02:48:49 The end of process
+02:50:10 Initializing settings.../ create a log file / copy Data File - Data.xlsx
+02:50:11 run 1C UPP
+02:50:11 delay 7 sec
+02:50:18 1C UPP is started
+02:50:19 The end of process
+02:55:01 Initializing settings.../ create a log file / copy Data File - Data.xlsx
+02:55:13 run 1C UPP
+02:55:14 delay 7 sec
+02:55:32 1C UPP is started
+02:58:19 Initializing settings.../ create a log file / copy Data File - Data.xlsx
+02:58:20 1C UPP is started
+03:00:33 Initializing settings.../ create a log file / copy Data File - Data.xlsx
+03:00:35 1C UPP is started
+03:00:37 start process
+03:02:16 Initializing settings.../ create a log file / copy Data File - Data.xlsx
+03:02:17 1C UPP is started
+03:02:19 start process
+03:07:32 Initializing settings.../ create a log file / copy Data File - Data.xlsx
+03:07:33 1C UPP is started
+03:07:35 start process
+03:26:30 Initializing settings.../ create a log file / copy Data File - Data.xlsx
+03:26:31 1C UPP is started
+03:27:44 Initializing settings.../ create a log file / copy Data File - Data.xlsx
+03:27:46 1C UPP is started
+03:27:47 start process
+03:29:24 Initializing settings.../ create a log file / copy Data File - Data.xlsx
+03:29:25 1C UPP is started
+03:29:26 start process
+03:54:04 Initializing settings.../ create a log file / copy Data File - Data.xlsx
+03:54:05 1C UPP is started
+03:54:07 start process
+03:55:42 fulfilling Zayavka in 1c UPP
