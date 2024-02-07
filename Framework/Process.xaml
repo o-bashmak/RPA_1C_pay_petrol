@@ -340,12 +340,6 @@
                   <InArgument x:TypeArguments="x:String" x:Key="out_Summa">
                     <mva:VisualBasicValue x:TypeArguments="x:String" ExpressionText="in_TransactionItem(2).ToString" />
                   </InArgument>
-                  <InArgument x:TypeArguments="x:String" x:Key="in_Resp_filter">
-                    <mva:VisualBasicValue x:TypeArguments="x:String" ExpressionText="in_Config(&quot;Resp_filter&quot;).ToString" />
-                  </InArgument>
-                  <InArgument x:TypeArguments="x:String" x:Key="in_Resp_z">
-                    <mva:VisualBasicValue x:TypeArguments="x:String" ExpressionText="in_Config(&quot;Resp_z&quot;).ToString" />
-                  </InArgument>
                 </ui:InvokeWorkflowFile.Arguments>
                 <sap:WorkflowViewStateService.ViewState>
                   <scg:Dictionary x:TypeArguments="x:String, x:Object">

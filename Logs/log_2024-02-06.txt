@@ -1,0 +1,30 @@
+﻿10:41:37 Initializing settings.../ create a log file / copy Data File - Data.xlsx
+10:41:39 run 1C UPP
+10:41:39 delay 7 sec
+10:41:46 delay 7 sec
+10:41:53 delay 7 sec
+10:42:00 delay 7 sec
+10:42:07 delay 7 sec
+10:42:14 delay 7 sec
+10:42:21 1C UPP is started
+10:42:22 start process
+10:55:24 Initializing settings.../ create a log file / copy Data File - Data.xlsx
+10:55:25 run 1C UPP
+10:55:25 delay 7 sec
+10:55:32 delay 7 sec
+10:55:39 delay 7 sec
+10:55:46 1C UPP is started
+10:55:47 start process
+11:24:34 The end of process
+11:26:21 Initializing settings.../ create a log file / copy Data File - Data.xlsx
+11:26:21 run 1C UPP
+11:26:21 delay 7 sec
+11:26:29 delay 7 sec
+11:26:36 delay 7 sec
+11:31:29 Initializing settings.../ create a log file / copy Data File - Data.xlsx
+11:31:30 run 1C UPP
+11:31:30 delay 7 sec
+11:31:37 delay 7 sec
+11:31:44 delay 7 sec
+11:31:52 1C UPP is started
+11:31:53 start process

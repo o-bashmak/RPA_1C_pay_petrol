@@ -2,7 +2,7 @@
   <x:Members>
     <x:Property Name="inout_dateSet" Type="InOutArgument(s:DateTime)" />
   </x:Members>
-  <sap:VirtualizedContainerService.HintSize>1154,1387</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>1154,1402</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>ActivityBuilder_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <scg:List x:TypeArguments="x:String" Capacity="66">
@@ -89,7 +89,7 @@
       <AssemblyReference>System.Runtime.WindowsRuntime</AssemblyReference>
     </scg:List>
   </TextExpression.ReferencesForImplementation>
-  <Sequence sap2010:Annotation.AnnotationText="Вычисляем какую дату нужно ставить оплату. Изначально на 9-ое число месяца, но только Вт или Чт. Если нет, вычисляем ближайший рабочий Вт или Чт" DisplayName="Compute the date" sap:VirtualizedContainerService.HintSize="616,1322" sap2010:WorkflowViewState.IdRef="Sequence_48">
+  <Sequence sap2010:Annotation.AnnotationText="Вычисляем на какую дату нужно ставить оплату. Изначально на 15-ое число месяца, но только Вт или Чт. Если нет, вычисляем ближайший рабочий Вт или Чт" DisplayName="Compute the date" sap:VirtualizedContainerService.HintSize="616,1337" sap2010:WorkflowViewState.IdRef="Sequence_48">
     <Sequence.Variables>
       <Variable x:TypeArguments="x:String" Name="isWorkDay" />
     </Sequence.Variables>
@@ -124,12 +124,12 @@
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
     </ui:CommentOut>
-    <Assign sap2010:Annotation.AnnotationText="Устанавливаем дату оплаты на 10-ое число. Следующи действием будет отнят 1 день." DisplayName="Assign inout_dateSet" sap:VirtualizedContainerService.HintSize="574,117" sap2010:WorkflowViewState.IdRef="Assign_27">
+    <Assign sap2010:Annotation.AnnotationText="Устанавливаем дату оплаты на 15-ое число. Следующи действием будет отнят 1 день для поиска ближайшего рабочего Вт или Чт." DisplayName="Assign inout_dateSet" sap:VirtualizedContainerService.HintSize="574,132" sap2010:WorkflowViewState.IdRef="Assign_27">
       <Assign.To>
         <OutArgument x:TypeArguments="s:DateTime">[inout_dateSet]</OutArgument>
       </Assign.To>
       <Assign.Value>
-        <InArgument x:TypeArguments="s:DateTime">[DateTime.Parse(Now.Date.ToString("yyyy/MM/25"))]</InArgument>
+        <InArgument x:TypeArguments="s:DateTime">[DateTime.Parse(Now.Date.ToString("yyyy/MM/15"))]</InArgument>
       </Assign.Value>
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
@@ -137,7 +137,7 @@
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
     </Assign>
-    <ui:InterruptibleDoWhile CurrentIndex="{x:Null}" sap2010:Annotation.AnnotationText="Оплата должна выпасть на 9 число. Если это выходной, то оплату делаем в ближайший к 9-му числу день." Condition="[CInt(isWorkDay)&lt;&gt;0]" DisplayName="Do While Work Day" sap:VirtualizedContainerService.HintSize="574,940" sap2010:WorkflowViewState.IdRef="InterruptibleDoWhile_1">
+    <ui:InterruptibleDoWhile CurrentIndex="{x:Null}" sap2010:Annotation.AnnotationText="Оплата должна выпасть на 15 число. Если это выходной, то оплату делаем в ближайший Вт или Чт" Condition="[CInt(isWorkDay)&lt;&gt;0]" DisplayName="Do While Work Day" sap:VirtualizedContainerService.HintSize="574,940" sap2010:WorkflowViewState.IdRef="InterruptibleDoWhile_1">
       <ui:InterruptibleDoWhile.Body>
         <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="538,733" sap2010:WorkflowViewState.IdRef="Sequence_49">
           <sap:WorkflowViewStateService.ViewState>

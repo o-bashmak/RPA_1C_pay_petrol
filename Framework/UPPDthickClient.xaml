@@ -10,13 +10,11 @@
     <x:Property Name="in_contract" Type="InArgument(x:String)" />
     <x:Property Name="in_CustomerName" Type="InArgument(x:String)" />
     <x:Property Name="out_Summa" Type="InArgument(x:String)" />
-    <x:Property Name="in_Resp_filter" Type="InArgument(x:String)" />
-    <x:Property Name="in_Resp_z" Type="InArgument(x:String)" />
   </x:Members>
   <this:UPPDthickClient.in_CustomerName>
     <InArgument x:TypeArguments="x:String" />
   </this:UPPDthickClient.in_CustomerName>
-  <sap:VirtualizedContainerService.HintSize>1564,14511</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>1564,14919</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>ActivityBuilder_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <scg:List x:TypeArguments="x:String" Capacity="48">
@@ -117,7 +115,7 @@
       <AssemblyReference>System.Runtime.WindowsRuntime</AssemblyReference>
     </scg:List>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="UPPD thick Client" sap:VirtualizedContainerService.HintSize="1574,14446" sap2010:WorkflowViewState.IdRef="Sequence_39">
+  <Sequence DisplayName="UPPD thick Client" sap:VirtualizedContainerService.HintSize="1574,14854" sap2010:WorkflowViewState.IdRef="Sequence_39">
     <Sequence.Variables>
       <Variable x:TypeArguments="s:DateTime" Name="dateSet" />
       <Variable x:TypeArguments="x:Boolean" Name="shot" />
@@ -128,13 +126,13 @@
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Application: УППД" sap:VirtualizedContainerService.HintSize="1532,14354" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" ScopeGuid="bd472394-354f-46fb-b914-132611a35f6e" Version="V1" WindowResize="Maximize">
+    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Application: УППД" sap:VirtualizedContainerService.HintSize="1532,14762" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" ScopeGuid="bd472394-354f-46fb-b914-132611a35f6e" Version="V1" WindowResize="Maximize">
       <uix:NApplicationCard.Body>
         <ActivityAction x:TypeArguments="x:Object">
           <ActivityAction.Argument>
             <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
           </ActivityAction.Argument>
-          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="1498,14065" sap2010:WorkflowViewState.IdRef="Sequence_40">
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="1498,14473" sap2010:WorkflowViewState.IdRef="Sequence_40">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -231,7 +229,7 @@
                 <uix:NTypeInto.Target>
                   <uix:TargetAnchorable DesignTimeRectangle="128, 164, 220, 19" DesignTimeScaleFactor="1" FriendlyName="'Ежемесячный'" FullSelectorArgument="&lt;uia role='поле' /&gt;" FuzzySelectorArgument="&lt;uia role='поле' automationid='' /&gt;" Guid="c33d5df6-78cb-4416-8305-5736a0333e62" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAOAAAAAXCAYAAAASukNAAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAJgSURBVHhe7ZtNboMwEIU5lw/ko3TNEXqA7iqxbVe5BOodokpddeF6xj+MzZikCgqEvCc9lYw9hqD5Mgapnfs9OxiGtzEAhOENnQE8fb6697cXGIbv4BmAHISgJxTV/s/31799Sx4AhKAoAAhBGwoAQtCG2h+AY+9M17mush3iOAQdSPsE0PRujB+fV6Pr430YrHU9bsghBQB3rLE33P0N2v9htRaAaad4KXYTgL0xYSvK21TrwqHhAuX5Pm5N3LaaqWvwlrYo4sFZnhPP08hzo5+X4h2dOw0M/lpSnHLCOvm6xXcovksrntQYZxC1+dDDay0Ayake62Pp6wCMyZMDbAwOQdgHAHsJnxcBOsEji9lyXhoL0No83sojyGxOImjDPAYiAa1B0wCpGU9qrUX3QJsPPbzWBJAsudHGrwNwsdhi91KKcg5uAIbXG2yAhgvaAy2LfSkvLF0qrsVjYh2bfiiW1tbiqevKPP5Lz4H+WoYpDh1LjwegL/5cvLJzeaVtaa2pmP3zlM8xoY3l8yznafJr2fB8Fq4jzBuUWLHGDLAg/nGgz9X4QJ26ulboWKpBotq5dEzWAEy1Vx9L3wYgj8XulbvYBE+5ZZzWyev5mFU6VyuvtQX1H7gz8S5UzM/Szk1qxFUA6QamOdo5oENoLQA14LTYdQDGRGnqBPk5judE8Kgj5kIVL03EyxS1eGVRN/KKuHgJU7wU0eAQsWJMxuP3Ks5ZjafHTPUc0CFUg3Stb8lbBhCCnkgAEII2FACEoA0FACFoQ+0CwNMH/iMehu/lGYAwDN/fABCGN/PZ/QGCiAYd1Bc7OQAAAABJRU5ErkJggg==" InformativeScreenshot="87e8b5ecd006a223f0158da7777025fe.png" ScopeSelectorArgument="&lt;wnd app='1cv8.exe' cls='V8TopLevelFrame' title='УППД /Программный робот RPA/' /&gt;" SearchSteps="Selector, FuzzySelector" Version="V1" Visibility="Interactive">
                     <uix:TargetAnchorable.Anchors>
-                      <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                      <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
                         <uix:Target DesignTimeRectangle="23, 164, 73, 19" FriendlyName="'Сценарий'" FullSelectorArgument="&lt;uia name='Сценарий:' role='флажок' /&gt;" FuzzySelectorArgument="&lt;uia name='Сценарий:' role='флажок' automationid='' check:fulltext='Сценарий:' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAE0AAAAXCAYAAABOHMIhAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAJXSURBVFhH7ZexasMwFEULndq1PxLIlCl0zzdkyFr/Q8gYipduhW4e6ynQoXQoHg0le6Ysga4hdChkUHUVSX5yJFtWKKSuBZfYz89PyvGVZF+w/ZZ1aqYOWoA6aAHqoAXoZGjXVzet/K2Shvb99ckWz/fs8eGuVshDPi3UJtWB09AA4iN/YT4NecjHfT5Ppm3S0OCgJk3kk0KbZMKi3iW7hcYDFmdL4/pfkrfTfKBNp1N5VEBDB5tkwEHNWb6Whdcpi3sDlqrzs9KSpXysG36czyZBY/SGBmD9fl+emU5LubPOE5Bd4iHzGRHNUuv1IKdRR6EpYDZo6CCST07VojKurefFOT+Ox2o6F0/cmZ+R6c9dHGcqf1JbR80EnLvibI/ZMWG5vFYlKzTAUeAosMViIWJo1GnGHy3JBcFwJ4m78lW9o3wB8LB+bgTYwx/X9yFXAC3VL8Vp/SCnDYdDAWk0GlmBoZ3qtMI1SgeIR3HyJ2MOuhw3+8Z6JeuIuDzPSL+OOB1znazQVquVBmcDhkadVrWmGYMyoNmngitfbCxqR6Z1aH4JWs6nX5Twe0r5trjqHwpyGpoCZwOGRp1WtXsagyKDTPk6FGPgpbgrH+uNejB4vdFOo3E+PYu46VJd3xEX/XnKCQ1tt9vJo+NGnQYZ72lknTmehlzYtQC2wUZA60fcTRoOP7bW4edqsyhDs8XpRuDtNLzhv78lEkl1Q17wFwHc4NjqQxTilFOloeFb8v31STioTsg7l2/P34Dm7bRQqQ7a9lulk6H9R3XQAtRBC1AHrbG27AfiNMGgWGyuJgAAAABJRU5ErkJggg==" SearchSteps="Selector, FuzzySelector" />
                       </scg:List>
                     </uix:TargetAnchorable.Anchors>
@@ -303,7 +301,7 @@
                 <uix:NTypeInto.Target>
                   <uix:TargetAnchorable DesignTimeRectangle="467, 164, 105, 19" DesignTimeScaleFactor="1" FriendlyName="'. .'" FullSelectorArgument="&lt;uia idx='5' role='поле' /&gt;" FuzzySelectorArgument="&lt;uia automationid='' role='поле' check:text='.  .' /&gt;" Guid="96bd986d-66b6-4ecf-9237-99c182ddfb67" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAG0AAAAXCAYAAAABQcHxAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAFUSURBVGhD7ZmxSgNBFEWnsLFI6+9YCELsLCwsRKv9AT8haC/+gJ2NncFKMNWWNtb5goCEQCqLce/Ck+HtZHZXX8wO3AMnO5ndbd6pJnH+a+lpXjJahv5EK2cP/vnplg7UaWUjGm6Q7mBe69W8t6/Tu+h+m3UfRvsbv42Weu9z8RHdh4xmgHW0+5szfzke+ffyMXqf0QywjIZg50d7tZvCMZoB4fCdc62Gw5c1RKCrKpREg/iuwzGaATqaIGu9Fw5f1n1kNAN0tFCg98Lhy7qPjGaAjpaC0QaCjibhYlcoz/KctkN0tBSMNhB0NAkXu8Jw+LLuI6MZoKOl2HG0F1+4ovpM0eWZ/NHR2gyHL2uI89jF8T7Paf+BHn5XY+/VB+yTkZ9cH/ri9KARDDKaAZbRIEJtCgYZzQDraJC/8m+ZbURLGY1WvvGf66HbiEbzkdGyc+m/AWvrnx5kvu6pAAAAAElFTkSuQmCC" InformativeScreenshot="1f17bcaa8ac566d30e9601ae74aff716.png" ScopeSelectorArgument="&lt;wnd app='1cv8.exe' cls='V8TopLevelFrame' title='УППД /Программный робот RPA/' /&gt;" SearchSteps="FuzzySelector" Version="V1" Visibility="Interactive">
                     <uix:TargetAnchorable.Anchors>
-                      <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                      <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
                         <uix:Target DesignTimeRectangle="367, 164, 69, 19" FriendlyName="'Период с'" FullSelectorArgument="&lt;uia name='Период с:' role='флажок' /&gt;" FuzzySelectorArgument="&lt;uia name='Период с:' role='флажок' automationid='' check:fulltext='Период с:' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAEkAAAAXCAYAAABH92JbAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAH2SURBVFhH7ZexasMwEIYLeaFApkyhe54hQ9b6HULGULJ0K3TLWE+GDqVD8Ggo2TNlCXQNoUOhg6rfluSTfY6l4BQSdPCDfD6dpM+6I7kTvwcRdFoBkoMCJAcFSA4KkBxkIP18f4nk9VE8Pz20CnGIp4luWQYSDv6ZvQkXQxziaaJbloGEG+JjebxOtFuIqN8T91VNFmKvY65YXpBms5kaMZCqQDjflcoZEgANBgP1FCBZNwamAZ0NSY6XE12CUxHviphIjnl/mWu/GpZlW8mTqRgomyt/U5nv4nJufyiW6Ua9k/6+nasqFhJgaFAUUJIkuQ/mAymeDA0A6o/IZvfpVD4Xm6Vw815n8vTKeMCbx2Y9QFqmdn79DsrnrhQYAJNrmz21iIU0Go1yKOPxmAUE84FUb+rFBu05GwOz8KvnlOSh8daa5dwmSJzPVSyk7XZrQHGAYH6Q+Otsz7EhZfKmRPjyNA+Nt9YkJfNfkGAaFAcI5gPJvurk0PJg+sqj3HRZ0RKr5eHKDXP1uAFS5+Wm7Xg8qlHdfCBZTdNq0LIncX75nPeXWh7auPV6OLDyUZF+VeQhezi3ceMX9PpjpRCcNsR18Yub++L+Yg5Jb1YHMpDwX2z9/pLfkDYhrov/bt1AurwMpKBmBUgOCpAcFCA5KEBq1UH8ASv3MacOIX37AAAAAElFTkSuQmCC" SearchSteps="Selector, FuzzySelector" />
                       </scg:List>
                     </uix:TargetAnchorable.Anchors>
@@ -319,7 +317,7 @@
                 <uix:NTypeInto.Target>
                   <uix:TargetAnchorable DesignTimeRectangle="596, 164, 105, 19" DesignTimeScaleFactor="1" FriendlyName="'. .'" FullSelectorArgument="&lt;uia idx='6' role='поле' /&gt;" FuzzyMatches="10000" FuzzySelectorArgument="&lt;uia automationid='' role='поле' /&gt;" Guid="fd476cb5-c505-4b2c-a143-3c11e9a7a60b" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAG0AAAAXCAYAAAABQcHxAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAFUSURBVGhD7ZmxSgNBFEWnsLFI6+9YCELsLCwsRKv9AT8haC/+gJ2NncFKMNWWNtb5goCEQCqLce/Ck+HtZHZXX8wO3AMnO5ndbd6pJnH+a+lpXjJahv5EK2cP/vnplg7UaWUjGm6Q7mBe69W8t6/Tu+h+m3UfRvsbv42Weu9z8RHdh4xmgHW0+5szfzke+ffyMXqf0QywjIZg50d7tZvCMZoB4fCdc62Gw5c1RKCrKpREg/iuwzGaATqaIGu9Fw5f1n1kNAN0tFCg98Lhy7qPjGaAjpaC0QaCjibhYlcoz/KctkN0tBSMNhB0NAkXu8Jw+LLuI6MZoKOl2HG0F1+4ovpM0eWZ/NHR2gyHL2uI89jF8T7Paf+BHn5XY+/VB+yTkZ9cH/ri9KARDDKaAZbRIEJtCgYZzQDraJC/8m+ZbURLGY1WvvGf66HbiEbzkdGyc+m/AWvrnx5kvu6pAAAAAElFTkSuQmCC" InformativeScreenshot="badf9d08c885283dbd76ffba0a5d5ad3.png" ScopeSelectorArgument="&lt;wnd app='1cv8.exe' cls='V8TopLevelFrame' title='УППД /Программный робот RPA/' /&gt;" SearchSteps="FuzzySelector" Version="V1" Visibility="Interactive">
                     <uix:TargetAnchorable.Anchors>
-                      <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                      <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
                         <uix:Target DesignTimeRectangle="578, 164, 14, 19" FriendlyName="'по'" FullSelectorArgument="&lt;uia name='по' role='текстовый' /&gt;" FuzzySelectorArgument="&lt;uia name='по' role='текстовый' automationid='' check:fulltext='по' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAABIAAAAXCAYAAAAGAx/kAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAB0SURBVDhPY/j/+8N/auBRgwjjUYMIY+oblGPA/N8RGcd1/n8Ckrvf+b83DiaW9P8kVD06RhgE0wjCQM0w/hqgIb0Hz4HFnyy2/O/YuAauGRkTNAiXOEwfDNPPIKp5DcRGBDZ214Aw3CBK8ahBhPFgM+jDfwDhGBPGcM3w5wAAAABJRU5ErkJggg==" SearchSteps="Selector, FuzzySelector, Image" />
                       </scg:List>
                     </uix:TargetAnchorable.Anchors>
@@ -341,7 +339,7 @@
                 <uix:NTypeInto.Target>
                   <uix:TargetAnchorable DesignTimeRectangle="467, 188, 257, 19" DesignTimeScaleFactor="1" FriendlyName="'Швайков Евгений'" FullSelectorArgument="&lt;uia idx='7' role='поле' /&gt;" FuzzySelectorArgument="&lt;uia automationid='' role='поле' /&gt;" Guid="f7405839-3a78-473f-9cc8-725f6c348a9b" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAQUAAAAXCAYAAAAC/1q1AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAANmSURBVHhe7VyxjtswDM0/9i+aj8gS9A+yBt3TrVuWFg1wy41ZsnjOeinQqYMqypRNyaRt9XytLnkPeEjMUBQpS09ycriV+/3iQBAEIyEKIAgm7ETh6ftn9/XLJxAEH5QDUQhGAACqAK3HXz+bYr6mHUQBACpGdaLw4eMPEFyUQBkgCuDdEyhDfaKwadyladyabqj1vmZSnlyLxHGn+FbE9eHa593cfL7Pqt97JFCGBxGFZ7fnttvT1e03ms9CrE68pmtfH25eCBq3jZ9tzu7obm87Tv+QQBkeRBR44ntcTmf188VYnShM1773J4N7EQCNQBmWEoXVahU4ZVtEFNLjOR11eQLsxBFY2OUijbtiiNPZ/c4oj8y+r2PDYZqr23Jbs1/JEVGw2qd27i/LIS7aJLYcE2HXa0ztoT3TyjfQzOOq29nUYrwWMzabWhTcRzEeIT4TKMNSokCUIqAJAnEZUZA33guB03ZAzZ9s1ElizwTBc+8narwOk4/jz+43VCLRLg6rfWJnJru3VfvsGod22VcSM6OZR1isPEZBjJUamVaMWTVq4zRWo2zLBMqwpCgQoxhogkBcRhTYt4VY0N6HFniH6B9e6dnaT8KdiOOvL7RTZYu765M4p19JmXNGq73mn/oS2gU0sHe10KtWo25P+lJs3WfcTQ/OI2nD8Qf2iRh81UOz5+M0rOUoTiRa/0AZ3qcoyBtPdp4U4csxIRDSf+t3/MvBfybtwf8cJpl8FBjEF3G0fmO73D+xe1rtNX81NtnzGHxNr2qNhl3GjAta2iJn5TEpCkaMuTWKcdJq2Z6GG4GMB5QhX9xyMVvviZooSDGQ7yXfWBT651L6ia3bRSnwWBwRg9rOenzI2nQU8RO7p9Ve8w850OSnay3n3G7VaNhlX/H5XPv1wcxDjjUd8aNdiW/FmF1jHKepWjSbJ1CGpURBEwHNNk8U+P0AcdLwZYv+eCl/a6dHA+nfnQSMyZd8Ced9+i/Aeh+r34RG/rS7We21iRwWZpeD+BJO+spavJtao2EP14LJ3ynI2sw8vM9UfpFGDDM2m1qIcfJXo7UY9QFlyBf3XL6m3bgoZDcUrJOWuNRIoAwQBfCvCFG4X1QnCgAA/F9AFAAASFCFKDx9w39eAsFH5kAUQBAEiRAFEAQFX9wfWtbL3v9sHDgAAAAASUVORK5CYII=" InformativeScreenshot="9659833f1defbaf89f68eebbd938b697.png" ScopeSelectorArgument="&lt;wnd app='1cv8.exe' cls='V8TopLevelFrame' title='УППД /Программный робот RPA/' /&gt;" SearchSteps="FuzzySelector" Version="V1" Visibility="Interactive">
                     <uix:TargetAnchorable.Anchors>
-                      <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                      <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
                         <uix:Target DesignTimeRectangle="367, 188, 100, 19" FriendlyName="'Ответственный'" FullSelectorArgument="&lt;uia name='Ответственный:' role='флажок' /&gt;" FuzzySelectorArgument="&lt;uia name='Ответственный:' role='флажок' automationid='' check:fulltext='Ответственный:' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAGgAAAAXCAYAAADnaAq1AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAALlSURBVGhD7ZnPi9NAFMcX6t3/Q0UXVg/1snrw5t/QQ88RvajH0ou4h14U8epavOVUFxa8aFldqEJBhMVF2KKWFRd/VEE8eHi+N8lLXmYmyXSbhYhT+DCZNy/vTeebN0nTJfgzA0998QLVHC9QTdl+9gAeh7e8QHWFxKHPwgItHTvu2wpbxhDo969v8GjzA9x+uFcK+ZG/DOhZHCmSIRAt+ubL77D/A0ohv42tqRHUUx2GQFQZUzx0hfzTgGMYdZtwsdWEXrcNwXIDgm4oxj0uFFYQLfh73LWKuHazkxyzQBR02kdxUJBpHIsEC1sN6A2574nWZE2t0Qgv4nBi80mxCrT3FXK5eqMDp86sJH1ZQSFWjpFwsgZBPKGM/T9GXcgFu0tpBb37AoorKAYfc5/EIdgmK8guRAi95TaMVNtQE0vACdI2mNpwa+RqQ2F7WH3K3uIrzR4DJmhnXxVjnOs7X75Z9juJi83JXjKuhEr6vE7iPMQq0O4BKE6iEMH1jjqmlvrE/f4g8ZEVZJ2cnlhM1jhn2I4WHI8z1aido/fVNtonUWiM8uWfO2++vLxO9qJxsqmLwfQvraCdz6A4d35VCXLh0uVEnHsoDo8T7hUU98VkqW9e0dFCZ+3RmNOi6yyYz7DHsZzsXImGQHQfwvjD7NxsWAV68wkUGy924WxzFU6cXlHcXR8kY4ysIKd7UNHi0lgsJrdJHElRDJ0F8xn+cd/FPqUKpb42PsKtLaCK1+bGlFbQ631IGDyPRLqD4kg7IyuIn+I4lvUpTptUZoI0Fi9UdtvSvojWP/QW55AvL6+L3SqQqDZ9bjasAo3xt6dk6+1Pw8bICnL6HaRNKrtVpFtO5sYvbtq2GPaHBLvvvPmyecRC59llfNsWh3b5YJLGSW8FhRVEbxLWnxzAq49QCvn5NwlHiyEQvVujRafKKIP8/Lu46imsoMPCQX1bTctUJpDnaPAC1Zztp/4f1X8CL1CtmcFfXjEuKx/paEMAAAAASUVORK5CYII=" SearchSteps="Selector, FuzzySelector" />
                       </scg:List>
                     </uix:TargetAnchorable.Anchors>
@@ -404,7 +402,7 @@
                 <uix:NGetText.Target>
                   <uix:TargetAnchorable DesignTimeRectangle="927, 335, 89, 19" DesignTimeScaleFactor="1" FriendlyName="'1100,00 Сумма всего'" FullSelectorArgument="&lt;uia role='таблицу' /&gt;&lt;uia name='1100,00 Сумма всего' /&gt;" FuzzySelectorArgument="&lt;uia role='таблицу' /&gt;&lt;uia role='' automationid='' /&gt;" Guid="253680ba-859d-4795-b7e6-ef1e33d73906" InformativeScreenshot="b356024f470055f27c57ee601e780979.png" ScopeSelectorArgument="&lt;wnd app='1cv8.exe' cls='V8TopLevelFrame' title='УППД /Программный робот RPA/' /&gt;" SearchSteps="FuzzySelector" Version="V1" Visibility="Interactive">
                     <uix:TargetAnchorable.Anchors>
-                      <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                      <scg:List x:TypeArguments="uix:ITarget" Capacity="2">
                         <uix:Target DesignTimeRectangle="928, 308, 74, 24" FriendlyName="'1cv8.exe УППД'" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAEoAAAAYCAYAAABdlmuNAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAKcSURBVFhH7ZPNThRBEMf74Bu54APsS+xH4gPs+AZMA/FglhdwiCRClF0uXgZjooHA4kHgQoyJ+4VkwMQYo+LCfrIeyuqe6eme3d70nN0+/DLV/6r+d031DIG/HbCYsYNKiR1USuygUmIHlRLy+tUTsJgh43EHLGbI+O4aLGbI3egnWMyQ0fAHWMyQ0eA7WMyQYf8bqFztPASavQd5xqMHsP7+QyI/r5Bh7ysIrnYWIe88htPzSDt/AevZRdgV6zmGDLqXINh1cChtubZIcFABBiHUWYVLZa3PHUUDRY39nmtbSt0WeEyLak35Qa0of3P8cr2aqJPI/ERNG70cVT+K9FWpO0Xe57RPEU41tVybAenfXoCAOisQKGsV31kAv8XiTTQP66hTwFjoFxBUF4CuFWIfU17177dWtHpCqxVw8Js89vEFvephqLewp2x4juyT6dJT5809aqEH601468BBfcEghDrLaCbXKszIq2GMzdLqAdd4PW/+OTa1jLdWgBP2jHxMeaaxQcY3rTk/+SWwHpSzJ2qn68M9fktfn9DUvjSQ/k0bBPw2mnKdoEmBlin4ZVlDHQrBzT6/GYp7aWU/rOO6Oc+/gkPUhH+kq+cmNFaTzcPJpK4g8lN6Gu8ZngzS6zRBEFQyeKsuHDcirbGBL5MBn6/3+AuzfBDVuyJuuOCVN+JY6Ka8l81F3uzsXMJbEHsw2F7cc4wx/20qe5Eu+0zqml4UeO1BWMvfHXtU8yqk96cOKsF2DpsRn20Gjd4puQy423LtlpYgiOKY+lKsm/LqWW4JG9XUy14m+qk/A69k0Et4EfXIZ0YvslaTV8BBfcYgDW/BL93Hg3W5/x/Svf4EaXiKU3dfvtHm5gHS/f0RLGbI7a8zsJg4g383eu7buMoWdQAAAABJRU5ErkJggg==" SearchSteps="Image" TargetType="ImageBased" />
                         <uix:Target DesignTimeRectangle="853, 312, 72, 24" FriendlyName="'1cv8.exe УППД'" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAEgAAAAYCAYAAABZY7uwAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAK/SURBVFhH7ZPbThNRFIb3BW9kwQfoS9BCfACGJ4DZQCAxxQdwSIhysMCNJhZjopFA8QJBiSEmtkAlQ02MMShCD5y8+F17mJnutrP3NFxIYnaTL6z+65916sDw5wQGNezF0/swqGFXVycwqGFXl8cwqGGXF0cwqGEX5z9gUMMuzr7DoIad17+hlfLSPfBkF1KCwbuYervR5vmnlCbABydQ1mpZTAUzyzzIhs/cZC92XvsKmfJSD1LWOLZKvlaap8Y9WA6+3walcXCaqazVxJz92JI96/10oHkvvule7Kx6CJllix7ab9Zunf0xOsYYDrXaHBxxINmTpwNNznnxTfeiA7kUNLhu2qy159b9hqSJ13VyVvLN0qCk+d64/Fm+r/Ha0y/q5AOfRHgMnSbq9tGBJA/VDnrr9tLB6pUDyHBrFG6LFpCzupHbE/EMHN/HrTTFgX4Ad7EbfDId1onLy/Xre6NqPTyihOyNejafpgPNeLFuLx10oC8UNODWCBVq1gLEck6eYmrMF1c9zfN7gzymIUdokTQ2xV+/TlxeaOKAjaUj+st+lRblCfpS3JbrEFY/3YeM95bsNmshuxw8w5HLNDzc4nBPV+i5Lorp7VhYufZ5enzeSVKtNdKC+r7e1rdVb9HcBb+27FlLIZV55MXavTSw2skuZNyFBP2KNt4Vfa04TUskkPO+v/EWFXnX99tBXLThZKbDONDj8k6y168tevc21Q6R/NHa9VzOqpQXrFI96ili/V5qWO13Aa242V7Y4f96ghq/lnIJ2NnGd3tgGK4fhxSGQz0uL/eyB2iJGH+UlhsIZlUQ0at1LxV0oM8UdMorGuYOcoWo3O2hnakwRIccogNF5DqAVY8/oVMe0uXtJy8jc/8rrPprBwY1rPLzIwxqWOVoGwY1dKAPFBhUsJ33z7G98cyggMF8NB/gL2Mr69sqOQyXAAAAAElFTkSuQmCC" SearchSteps="Image" TargetType="ImageBased" />
                       </scg:List>
@@ -412,7 +410,7 @@
                   </uix:TargetAnchorable>
                 </uix:NGetText.Target>
               </uix:NGetText>
-              <Assign sap2010:Annotation.AnnotationText="Из полученного значения выбираем первую часть строки - сумму" DisplayName="Assign out_Summa" sap:VirtualizedContainerService.HintSize="334,103" sap2010:WorkflowViewState.IdRef="Assign_19">
+              <Assign sap2010:Annotation.AnnotationText="Из полученного значения выбираем первую часть строки - сумму" DisplayName="Assign out_Summa" sap:VirtualizedContainerService.HintSize="334,102" sap2010:WorkflowViewState.IdRef="Assign_19">
                 <Assign.To>
                   <OutArgument x:TypeArguments="x:String">[out_Summa]</OutArgument>
                 </Assign.To>
@@ -472,7 +470,7 @@
                 </sap:WorkflowViewStateService.ViewState>
               </uix:NKeyboardShortcuts>
             </Sequence>
-            <Sequence sap2010:Annotation.AnnotationText="Устанавливаем фильтр для заявки и делаем копию последнего документа" DisplayName="Set filter" sap:VirtualizedContainerService.HintSize="1456,1620" sap2010:WorkflowViewState.IdRef="Sequence_43">
+            <Sequence sap2010:Annotation.AnnotationText="Устанавливаем фильтр для заявки и делаем копию последнего документа" DisplayName="Set filter" sap:VirtualizedContainerService.HintSize="1456,1651" sap2010:WorkflowViewState.IdRef="Sequence_43">
               <sap:WorkflowViewStateService.ViewState>
                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                   <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -493,7 +491,7 @@
               </uix:NClick>
               <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="436,51" sap2010:WorkflowViewState.IdRef="CommentOut_9">
                 <ui:CommentOut.Body>
-                  <Sequence DisplayName="Игнорируемые действия" sap:VirtualizedContainerService.HintSize="376,308" sap2010:WorkflowViewState.IdRef="Sequence_91">
+                  <Sequence DisplayName="Игнорируемые действия" sap:VirtualizedContainerService.HintSize="376,174" sap2010:WorkflowViewState.IdRef="Sequence_91">
                     <sap:WorkflowViewStateService.ViewState>
                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
                         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -630,41 +628,41 @@
                   </scg:Dictionary>
                 </sap:WorkflowViewStateService.ViewState>
               </uix:NTypeInto>
-              <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="436,423" sap2010:WorkflowViewState.IdRef="CommentOut_14">
+              <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Ответственный'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="436,253" sap2010:WorkflowViewState.IdRef="NTypeInto_29" ScopeIdentifier="bd472394-354f-46fb-b914-132611a35f6e" Text="[in_ResponsibleIs]" Version="V1">
+                <uix:NTypeInto.Target>
+                  <uix:TargetAnchorable DesignTimeRectangle="257, 154, 233, 19" DesignTimeScaleFactor="1" FriendlyName="'Программный робот RPA'" FullSelectorArgument="&lt;uia name='Отбор' role='вкладка' /&gt;&lt;uia idx='32' role='поле' /&gt;" FuzzySelectorArgument="&lt;uia name='Отбор' role='вкладка' /&gt;&lt;uia automationid='' role='поле' check:text='Программный робот RPA' /&gt;" Guid="6c9a112b-39e8-4d25-ace5-fff3f0e88f81" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAO0AAAAXCAYAAADnRMjwAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAASdSURBVHhe7VzbThRBEN0f8IfmG3z1F+bBBz9DEw3JRn0x8dl4Q0HCcIlIvMREJYKuCwurEJW7BBcB8fLQdvVO91RPV8/OzK4R3Drm4PSpmp7emTpTjQEr4ndLMJnMk0M2LZN5wmiZtrXzXrx8dkOM3D0vpkavqL+ZTOa/4/R4VWx+ekWbFgw7NjQgGvUn4tfPI8FgMFzMPB+U/tgvxb3dVVLP4uZ6Q0w8GLCMa0wLHRYMy2Aw/ADT/vzRKsXtrUVS78TNtXnVcR3TQivmDstgZEOZ9minFDdWZ0k9D8Gfjmnhe1gGg5ENMO2P71ul+Hn5OannIWlaJWo0qyKoVEQlzaAqmnEKo1eIRFgJ5dcuQD6vQIR6UieOYhpRqPQqP+BMgGmPDtdLcWXxEannYT7Tpg1KaX2BpqjGnzsKwx4VtZwzDIyJAsdBBUE8m6Y0odHScSI/kusJ5ecL2LWZANN+P1gtxaX6uDU+d+aUYvPdhNHgWOs4l01bEM1q22BdmyuGMkjUwztJPhvUwZ14urvDiwnGUu/TZ5wXyrT7H0tx4c2QNW7WxhLjyuP0GOd2bdpAPuAwiLda8ti8nGUO1nVR2Fuztu6dAzqEyU22cUqzTAOFB+fGa+oUx5/H+ixI1/DElXmJ/KL3I4R83WlBz8yPPwdm+uWB1quR1WmtGADiak4wL2+Rs9A27Uop1mfvOlqzNmqMmhh21Mnr3rTKTO2oKoDYiFVZcEaHAo+Ly5lLwjeHBXxNKHRUUDB/ANu53HG0BmtepGtQcdCUmdz8wvdDzmPp8Zy+fAW0Jgd6bZipl4EVlzFsTLiWvpS6b+xaL8C0h9+WS7E2c4vUp0cuivC0fPaScEzl9KDT4ljydrZ0b34bvjngPDBfUmBoDmkIVciqCKEoU9fIiuOixfNaWlzM6XnlH7W+KNExbC3H/bBeUMlW1ZevkB5jOLmRWoPxfNa5UoWXBXVvGC7apv1QirWZm4629HbE6bSgpfOOtWlD+BdM3SKcOdoFFshc1Q0Kx2N4dGV6GKfike4+SMewtc73w/5+8i+YFqBfYIBO5xp3A5L1M1yAaQ/23pcidFo8XkSGheP0GOd2b1pZZPqhmkKXx97tIFEwvjmggI1eTXQzh1xHKOfVx2ZNeeMAj06aFncepGMUvR+O3iFfwXNtBTKWvAyyzqW2w5TGaANMu99aKsV3r29bY23Qxptho8Gx1nFuDzqt3HrJArO2lACZk+jJ+VTB+OYAo+otK+Toeciis9ZUII71+FrWOlJx4x2kYxS9H9LZVr6xpi8f4Lm2AhlDHdN7rqerZl2rzwGm/bbbUNTfh+Yd16Vp9XFRkqYt8hNRvXig/1NRcIH3D8C0rZ264p3rZxXzjudnk3OLcmzokmtacHLenz1m09pg0/YPwLS727VSnJ+7R+p5SJr28eQ18WHpRbw0BoNBAUy7szFbigvStJTeicuNKfq3fL5sQAseYOMyGBkA026tzZTiQu0+qWexPvdAjA9fpH+fVhv3YXRZbZX5f65gMm2ODl4g9b/FsfsXxNPJq+Lr9oLxKNAyLZPJPP5k0zKZJ4ot8QdvQBkQFHh3IAAAAABJRU5ErkJggg==" InformativeScreenshot="5b2d275cd1109c8616011ce0b33def90.png" ScopeSelectorArgument="&lt;wnd app='1cv8.exe' cls='V8NewLocalFrameBaseWnd' title='Отбор и сортировка' /&gt;" SearchSteps="FuzzySelector, Image" Version="V1" Visibility="Interactive">
+                    <uix:TargetAnchorable.Anchors>
+                      <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                        <uix:Target DesignTimeRectangle="22, 154, 106, 19" FriendlyName="'Ответственный'" FullSelectorArgument="&lt;uia name='Отбор' role='вкладка' /&gt;&lt;uia name='Ответственный' role='флажок' /&gt;" FuzzySelectorArgument="&lt;uia name='Отбор' role='вкладка' /&gt;&lt;uia name='Ответственный' role='флажок' automationid='' check:fulltext='Ответственный' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAG4AAAAXCAYAAADqdnryAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAIPSURBVGhD7ZixasMwEIYLfqGsGfsiGbLWL5ExFC/dCt0y1lOhQ+kQMhpKXiFLoGuGDIUO1ztZUiRZdmRH2Iie4SfR6Xwn+/NdFN/B7wlY6YnBJSoGl6gYXKJicIlKg/s5f8Pb6yM8Pz1cFfmRvxmINa40OILxVb1DyEF+5G8GYo0rDY4qqc8h/HWgPVSrOdwv5lCslpDPMshXpTHPiq0o4I4bhIagjnJMIMtFBsVOjVn1PVmLe1Thw10efD7higKuxEprLOSwhlwu1LL/Y4kHPFI3igLOD6iEYraESnxmYsFauHBqpxcbtlhVnQi8wGoV9oV6Mv0x4IB25Sti7Ft9++Vzrsl4CIPsV+YFQJ9/D40ATo6Ni2ics1vWIPC7Vb3OOe5YtOMNwaI5ytd+bt98bXmD7F3zZBMPice/h6YD16iAGoBtr+eCYLi6MV/DLmMF2VXlNsDR7xzG39lrG6LxfuO6bjrNScjqU8cx1RXD1Y35Gv5yHGI/UkXT2JmvsEXm1CGctQ1RFHBqV6nG3l2ls1hr4TQnb6Dd/pwLdMaDW2VAvra8IXYvOKM63bUNURRwQf/jnMXaLefSuqwNh7FZ8MXwb078vn3z2XkMAG12M76vVaLd3BBZcQZIg6M3IdvPjcTSfZAfvzmZVhocvXvcfryISrom8uN3ldNKg2OlJQaXqBhcomJwiYrBJakT/AGUiqn/y7zBPwAAAABJRU5ErkJggg==" SearchSteps="Selector, FuzzySelector" />
+                      </scg:List>
+                    </uix:TargetAnchorable.Anchors>
+                  </uix:TargetAnchorable>
+                </uix:NTypeInto.Target>
+                <uix:NTypeInto.VerifyOptions>
+                  <uix:VerifyExecutionTypeIntoOptions DisplayName="{x:Null}" Mode="Appears">
+                    <uix:VerifyExecutionTypeIntoOptions.Retry>
+                      <InArgument x:TypeArguments="x:Boolean" />
+                    </uix:VerifyExecutionTypeIntoOptions.Retry>
+                    <uix:VerifyExecutionTypeIntoOptions.Timeout>
+                      <InArgument x:TypeArguments="x:Double" />
+                    </uix:VerifyExecutionTypeIntoOptions.Timeout>
+                  </uix:VerifyExecutionTypeIntoOptions>
+                </uix:NTypeInto.VerifyOptions>
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
+              </uix:NTypeInto>
+              <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="436,161" sap2010:WorkflowViewState.IdRef="CommentOut_14">
                 <ui:CommentOut.Body>
-                  <Sequence DisplayName="Игнорируемые действия" sap:VirtualizedContainerService.HintSize="376,345" sap2010:WorkflowViewState.IdRef="Sequence_107">
+                  <Sequence DisplayName="Игнорируемые действия" sap:VirtualizedContainerService.HintSize="208,83" sap2010:WorkflowViewState.IdRef="Sequence_107">
                     <sap:WorkflowViewStateService.ViewState>
                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
                         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                       </scg:Dictionary>
                     </sap:WorkflowViewStateService.ViewState>
-                    <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Ответственный'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="334,253" sap2010:WorkflowViewState.IdRef="NTypeInto_29" ScopeIdentifier="bd472394-354f-46fb-b914-132611a35f6e" Text="[in_Resp_filter]" Version="V1">
-                      <uix:NTypeInto.Target>
-                        <uix:TargetAnchorable DesignTimeRectangle="257, 154, 233, 19" DesignTimeScaleFactor="1" FriendlyName="'Программный робот RPA'" FullSelectorArgument="&lt;uia name='Отбор' role='вкладка' /&gt;&lt;uia idx='32' role='поле' /&gt;" FuzzySelectorArgument="&lt;uia name='Отбор' role='вкладка' /&gt;&lt;uia automationid='' role='поле' check:text='Программный робот RPA' /&gt;" Guid="6c9a112b-39e8-4d25-ace5-fff3f0e88f81" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAO0AAAAXCAYAAADnRMjwAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAASdSURBVHhe7VzbThRBEN0f8IfmG3z1F+bBBz9DEw3JRn0x8dl4Q0HCcIlIvMREJYKuCwurEJW7BBcB8fLQdvVO91RPV8/OzK4R3Drm4PSpmp7emTpTjQEr4ndLMJnMk0M2LZN5wmiZtrXzXrx8dkOM3D0vpkavqL+ZTOa/4/R4VWx+ekWbFgw7NjQgGvUn4tfPI8FgMFzMPB+U/tgvxb3dVVLP4uZ6Q0w8GLCMa0wLHRYMy2Aw/ADT/vzRKsXtrUVS78TNtXnVcR3TQivmDstgZEOZ9minFDdWZ0k9D8Gfjmnhe1gGg5ENMO2P71ul+Hn5OannIWlaJWo0qyKoVEQlzaAqmnEKo1eIRFgJ5dcuQD6vQIR6UieOYhpRqPQqP+BMgGmPDtdLcWXxEannYT7Tpg1KaX2BpqjGnzsKwx4VtZwzDIyJAsdBBUE8m6Y0odHScSI/kusJ5ecL2LWZANN+P1gtxaX6uDU+d+aUYvPdhNHgWOs4l01bEM1q22BdmyuGMkjUwztJPhvUwZ14urvDiwnGUu/TZ5wXyrT7H0tx4c2QNW7WxhLjyuP0GOd2bdpAPuAwiLda8ti8nGUO1nVR2Fuztu6dAzqEyU22cUqzTAOFB+fGa+oUx5/H+ixI1/DElXmJ/KL3I4R83WlBz8yPPwdm+uWB1quR1WmtGADiak4wL2+Rs9A27Uop1mfvOlqzNmqMmhh21Mnr3rTKTO2oKoDYiFVZcEaHAo+Ly5lLwjeHBXxNKHRUUDB/ANu53HG0BmtepGtQcdCUmdz8wvdDzmPp8Zy+fAW0Jgd6bZipl4EVlzFsTLiWvpS6b+xaL8C0h9+WS7E2c4vUp0cuivC0fPaScEzl9KDT4ljydrZ0b34bvjngPDBfUmBoDmkIVciqCKEoU9fIiuOixfNaWlzM6XnlH7W+KNExbC3H/bBeUMlW1ZevkB5jOLmRWoPxfNa5UoWXBXVvGC7apv1QirWZm4629HbE6bSgpfOOtWlD+BdM3SKcOdoFFshc1Q0Kx2N4dGV6GKfike4+SMewtc73w/5+8i+YFqBfYIBO5xp3A5L1M1yAaQ/23pcidFo8XkSGheP0GOd2b1pZZPqhmkKXx97tIFEwvjmggI1eTXQzh1xHKOfVx2ZNeeMAj06aFncepGMUvR+O3iFfwXNtBTKWvAyyzqW2w5TGaANMu99aKsV3r29bY23Qxptho8Gx1nFuDzqt3HrJArO2lACZk+jJ+VTB+OYAo+otK+Toeciis9ZUII71+FrWOlJx4x2kYxS9H9LZVr6xpi8f4Lm2AhlDHdN7rqerZl2rzwGm/bbbUNTfh+Yd16Vp9XFRkqYt8hNRvXig/1NRcIH3D8C0rZ264p3rZxXzjudnk3OLcmzokmtacHLenz1m09pg0/YPwLS727VSnJ+7R+p5SJr28eQ18WHpRbw0BoNBAUy7szFbigvStJTeicuNKfq3fL5sQAseYOMyGBkA026tzZTiQu0+qWexPvdAjA9fpH+fVhv3YXRZbZX5f65gMm2ODl4g9b/FsfsXxNPJq+Lr9oLxKNAyLZPJPP5k0zKZJ4ot8QdvQBkQFHh3IAAAAABJRU5ErkJggg==" InformativeScreenshot="5b2d275cd1109c8616011ce0b33def90.png" ScopeSelectorArgument="&lt;wnd app='1cv8.exe' cls='V8NewLocalFrameBaseWnd' title='Отбор и сортировка' /&gt;" SearchSteps="FuzzySelector, Image" Version="V1" Visibility="Interactive">
-                          <uix:TargetAnchorable.Anchors>
-                            <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
-                              <uix:Target DesignTimeRectangle="22, 154, 106, 19" FriendlyName="'Ответственный'" FullSelectorArgument="&lt;uia name='Отбор' role='вкладка' /&gt;&lt;uia name='Ответственный' role='флажок' /&gt;" FuzzySelectorArgument="&lt;uia name='Отбор' role='вкладка' /&gt;&lt;uia name='Ответственный' role='флажок' automationid='' check:fulltext='Ответственный' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAG4AAAAXCAYAAADqdnryAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAIPSURBVGhD7ZixasMwEIYLfqGsGfsiGbLWL5ExFC/dCt0y1lOhQ+kQMhpKXiFLoGuGDIUO1ztZUiRZdmRH2Iie4SfR6Xwn+/NdFN/B7wlY6YnBJSoGl6gYXKJicIlKg/s5f8Pb6yM8Pz1cFfmRvxmINa40OILxVb1DyEF+5G8GYo0rDY4qqc8h/HWgPVSrOdwv5lCslpDPMshXpTHPiq0o4I4bhIagjnJMIMtFBsVOjVn1PVmLe1Thw10efD7higKuxEprLOSwhlwu1LL/Y4kHPFI3igLOD6iEYraESnxmYsFauHBqpxcbtlhVnQi8wGoV9oV6Mv0x4IB25Sti7Ft9++Vzrsl4CIPsV+YFQJ9/D40ATo6Ni2ics1vWIPC7Vb3OOe5YtOMNwaI5ytd+bt98bXmD7F3zZBMPice/h6YD16iAGoBtr+eCYLi6MV/DLmMF2VXlNsDR7xzG39lrG6LxfuO6bjrNScjqU8cx1RXD1Y35Gv5yHGI/UkXT2JmvsEXm1CGctQ1RFHBqV6nG3l2ls1hr4TQnb6Dd/pwLdMaDW2VAvra8IXYvOKM63bUNURRwQf/jnMXaLefSuqwNh7FZ8MXwb078vn3z2XkMAG12M76vVaLd3BBZcQZIg6M3IdvPjcTSfZAfvzmZVhocvXvcfryISrom8uN3ldNKg2OlJQaXqBhcomJwiYrBJakT/AGUiqn/y7zBPwAAAABJRU5ErkJggg==" SearchSteps="Selector, FuzzySelector" />
-                            </scg:List>
-                          </uix:TargetAnchorable.Anchors>
-                        </uix:TargetAnchorable>
-                      </uix:NTypeInto.Target>
-                      <uix:NTypeInto.VerifyOptions>
-                        <uix:VerifyExecutionTypeIntoOptions DisplayName="{x:Null}" Mode="Appears">
-                          <uix:VerifyExecutionTypeIntoOptions.Retry>
-                            <InArgument x:TypeArguments="x:Boolean" />
-                          </uix:VerifyExecutionTypeIntoOptions.Retry>
-                          <uix:VerifyExecutionTypeIntoOptions.Timeout>
-                            <InArgument x:TypeArguments="x:Double" />
-                          </uix:VerifyExecutionTypeIntoOptions.Timeout>
-                        </uix:VerifyExecutionTypeIntoOptions>
-                      </uix:NTypeInto.VerifyOptions>
-                      <sap:WorkflowViewStateService.ViewState>
-                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                          <x:Boolean x:Key="IsPinned">False</x:Boolean>
-                        </scg:Dictionary>
-                      </sap:WorkflowViewStateService.ViewState>
-                    </uix:NTypeInto>
                   </Sequence>
                 </ui:CommentOut.Body>
               </ui:CommentOut>
@@ -693,9 +691,9 @@
                 </sap:WorkflowViewStateService.ViewState>
               </uix:NKeyboardShortcuts>
             </Sequence>
-            <uix:NCheckState sap2010:Annotation.AnnotationText="Ждем, пока появится окно - копия последней заявки на оплату" DisplayName="Check App State '1cv8.exe УППД'" sap:VirtualizedContainerService.HintSize="1456,7291" sap2010:WorkflowViewState.IdRef="NCheckState_6" ScopeIdentifier="bd472394-354f-46fb-b914-132611a35f6e" Version="V1">
+            <uix:NCheckState sap2010:Annotation.AnnotationText="Ждем, пока появится окно - копия последней заявки на оплату" DisplayName="Check App State '1cv8.exe УППД'" sap:VirtualizedContainerService.HintSize="1456,7668" sap2010:WorkflowViewState.IdRef="NCheckState_6" ScopeIdentifier="bd472394-354f-46fb-b914-132611a35f6e" Version="V1">
               <uix:NCheckState.IfExists>
-                <Sequence DisplayName="Целевой объект появляется" sap:VirtualizedContainerService.HintSize="1152,7044" sap2010:WorkflowViewState.IdRef="Sequence_81">
+                <Sequence DisplayName="Целевой объект появляется" sap:VirtualizedContainerService.HintSize="1152,7421" sap2010:WorkflowViewState.IdRef="Sequence_81">
                   <Sequence.Variables>
                     <Variable x:TypeArguments="x:Int32" Default="0" Name="count" />
                   </Sequence.Variables>
@@ -704,7 +702,7 @@
                       <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                     </scg:Dictionary>
                   </sap:WorkflowViewStateService.ViewState>
-                  <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" sap2010:Annotation.AnnotationText="Вычислем дату оплаты - следующий рабочий Вт или Чт" DisplayName="Invoke Computethedate workflow" sap:VirtualizedContainerService.HintSize="1110,143" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_2" UnSafe="False" WorkflowFileName="Computethedate.xaml">
+                  <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" sap2010:Annotation.AnnotationText="Вычислем дату оплаты - ближайший рабочий Вт или Чт к 15-му числу месяца" DisplayName="Invoke Computethedate workflow" sap:VirtualizedContainerService.HintSize="1110,154" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_2" UnSafe="False" WorkflowFileName="Computethedate.xaml">
                     <ui:InvokeWorkflowFile.Arguments>
                       <InOutArgument x:TypeArguments="s:DateTime" x:Key="inout_dateSet">[dateSet]</InOutArgument>
                     </ui:InvokeWorkflowFile.Arguments>
@@ -716,7 +714,7 @@
                       </scg:Dictionary>
                     </sap:WorkflowViewStateService.ViewState>
                   </ui:InvokeWorkflowFile>
-                  <Sequence sap2010:Annotation.AnnotationText="Заполняем заявку на расходование средств" DisplayName="FullFill a Zayavka" sap:VirtualizedContainerService.HintSize="1110,2087" sap2010:WorkflowViewState.IdRef="Sequence_72">
+                  <Sequence sap2010:Annotation.AnnotationText="Заполняем заявку на расходование средств" DisplayName="FullFill a Zayavka" sap:VirtualizedContainerService.HintSize="1110,2453" sap2010:WorkflowViewState.IdRef="Sequence_72">
                     <sap:WorkflowViewStateService.ViewState>
                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
                         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -787,7 +785,7 @@
                             <ActivityAction.Argument>
                               <DelegateInArgument x:TypeArguments="s:Exception" Name="exception" />
                             </ActivityAction.Argument>
-                            <Sequence sap:VirtualizedContainerService.HintSize="376,401" sap2010:WorkflowViewState.IdRef="Sequence_68">
+                            <Sequence sap:VirtualizedContainerService.HintSize="376,506" sap2010:WorkflowViewState.IdRef="Sequence_68">
                               <sap:WorkflowViewStateService.ViewState>
                                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                   <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -833,7 +831,7 @@
                     </TryCatch>
                     <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="680,51" sap2010:WorkflowViewState.IdRef="CommentOut_13">
                       <ui:CommentOut.Body>
-                        <Sequence DisplayName="Игнорируемые действия" sap:VirtualizedContainerService.HintSize="480,143" sap2010:WorkflowViewState.IdRef="Sequence_106">
+                        <Sequence DisplayName="Игнорируемые действия" sap:VirtualizedContainerService.HintSize="306,143" sap2010:WorkflowViewState.IdRef="Sequence_106">
                           <sap:WorkflowViewStateService.ViewState>
                             <scg:Dictionary x:TypeArguments="x:String, x:Object">
                               <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -964,7 +962,7 @@
                         </scg:Dictionary>
                       </sap:WorkflowViewStateService.ViewState>
                     </ui:CommentOut>
-                    <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type ResponsibleIs" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="680,51" sap2010:WorkflowViewState.IdRef="NTypeInto_23" ScopeIdentifier="bd472394-354f-46fb-b914-132611a35f6e" Text="[in_Resp_z]" Version="V1">
+                    <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type ResponsibleIs" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="680,216" sap2010:WorkflowViewState.IdRef="NTypeInto_23" ScopeIdentifier="bd472394-354f-46fb-b914-132611a35f6e" Text="[in_ResponsibleIs]" Version="V1">
                       <uix:NTypeInto.Target>
                         <uix:TargetAnchorable DesignTimeRectangle="1017, 790, 283, 23" FriendlyName="'Швайков Евгений'" FullSelectorArgument="&lt;uia helpText='По умолчанию заполняется значением, &amp;#xD;&amp;#xA;введенным для пользователя,*' role='поле' /&gt;" FuzzySelectorArgument="&lt;uia helpText='По умолчанию заполняется значением, &amp;#xD;&amp;#xA;введенным для пользователя,*' role='поле' automationid='' check:text='Швайков Евгений Сергеевич' /&gt;" Guid="b5f9a9ac-5098-4137-8883-e488c629d08c" ImageBase64="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" InformativeScreenshot="194de9f2db027b58eef22fa1c6946c6f.png" ScopeSelectorArgument="&lt;wnd app='1cv8.exe' cls='V8TopLevelFrame' title='УППД /*' /&gt;" SearchSteps="Selector, FuzzySelector">
                           <uix:TargetAnchorable.Anchors>
@@ -976,7 +974,7 @@
                       </uix:NTypeInto.Target>
                       <sap:WorkflowViewStateService.ViewState>
                         <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                           <x:Boolean x:Key="IsPinned">False</x:Boolean>
                         </scg:Dictionary>
                       </sap:WorkflowViewStateService.ViewState>
@@ -1014,6 +1012,17 @@
                         </scg:Dictionary>
                       </sap:WorkflowViewStateService.ViewState>
                     </uix:NKeyboardShortcuts>
+                    <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="680,161" sap2010:WorkflowViewState.IdRef="CommentOut_15">
+                      <ui:CommentOut.Body>
+                        <Sequence DisplayName="Игнорируемые действия" sap:VirtualizedContainerService.HintSize="208,83" sap2010:WorkflowViewState.IdRef="Sequence_108">
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                        </Sequence>
+                      </ui:CommentOut.Body>
+                    </ui:CommentOut>
                     <uix:NCheckState DisplayName="Check App State '1С:Предприятие'" sap:VirtualizedContainerService.HintSize="680,488" sap2010:WorkflowViewState.IdRef="NCheckState_7" ScopeIdentifier="bd472394-354f-46fb-b914-132611a35f6e" Timeout="10" Version="V3">
                       <uix:NCheckState.IfExists>
                         <Sequence DisplayName="Целевой объект появляется" sap:VirtualizedContainerService.HintSize="376,272" sap2010:WorkflowViewState.IdRef="Sequence_92">
