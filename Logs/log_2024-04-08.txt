@@ -1,0 +1,12 @@
+﻿10:05:14 Initializing settings.../ create a log file / copy Data File - Data.xlsx
+10:05:16 run 1C UPP
+10:05:16 delay 7 sec
+10:05:23 delay 7 sec
+10:05:30 delay 7 sec
+10:05:37 delay 7 sec
+10:05:44 1C UPP is started
+10:05:45 start process
+10:07:22 fulfilling Zayavka in 1c UPP
+10:07:39 fulfill Zayavka is fullfilled
+10:08:00 Zayavka is created successfully
+10:08:25 The end of process

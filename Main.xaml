@@ -98,6 +98,7 @@
       <AssemblyReference>UiPath.Mail</AssemblyReference>
       <AssemblyReference>UiPath.Mail.Activities.Design</AssemblyReference>
       <AssemblyReference>UiPath.Web.Activities</AssemblyReference>
+      <AssemblyReference>System.Runtime.WindowsRuntime</AssemblyReference>
     </scg:List>
   </TextExpression.ReferencesForImplementation>
   <StateMachine InitialState="{x:Reference __ReferenceID3}" sap2010:Annotation.AnnotationText="[1C auto arenda]&#xA;[Оплата аренды за авто от Серволюкс Могилев к СЗАО Серволюкс]&#xA;[Additional information (@STech)]" DisplayName="General Business Process" sap:VirtualizedContainerService.HintSize="687,798" sap2010:WorkflowViewState.IdRef="StateMachine_1">
@@ -618,7 +619,7 @@
                                     <ActivityAction.Argument2>
                                       <DelegateInArgument x:TypeArguments="x:Int32" Name="CurrentIndex" />
                                     </ActivityAction.Argument2>
-                                    <ui:MoveFile DestinationResource="{x:Null}" PathResource="{x:Null}" sap2010:Annotation.AnnotationText="Перемещаем файлы скринов в папку бекапов" ContinueOnError="True" Destination="[&quot;Data\Backup\bck_&quot;+Now.Date.ToString(&quot;yyyy.MM.dd&quot;) + CurrentFile.Name]" DisplayName="Move Screenshots" sap:VirtualizedContainerService.HintSize="434,188" sap2010:WorkflowViewState.IdRef="MoveFile_2" Overwrite="True" Path="[CurrentFile.ToString]">
+                                    <ui:MoveFile DestinationResource="{x:Null}" PathResource="{x:Null}" sap2010:Annotation.AnnotationText="Перемещаем файлы скринов в папку бекапов" ContinueOnError="True" Destination="[&quot;C:\Users\Public\Documents\RPA\1C_pay_petrol\Data\Backup\bck_&quot;+Now.Date.ToString(&quot;yyyy.MM.dd&quot;) + &quot;\&quot; + CurrentFile.Name]" DisplayName="Move Screenshots" sap:VirtualizedContainerService.HintSize="434,188" sap2010:WorkflowViewState.IdRef="MoveFile_2" Overwrite="True" Path="[CurrentFile.ToString]">
                                       <sap:WorkflowViewStateService.ViewState>
                                         <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                           <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
